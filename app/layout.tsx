@@ -1,4 +1,10 @@
 import type { Metadata } from "next";
+import { MdOutlineSettingsSuggest } from "react-icons/md";
+import { FaTachometerAlt } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import { IoIosNotificationsOutline } from "react-icons/io";
+import { GoDotFill } from "react-icons/go";
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -16,7 +22,104 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/a/ae/J.C._Bose_University_of_Science_and_Technology%2C_YMCA_logo.png" />
+      </head>
+      <body className={inter.className}>
+      <div >
+      
+
+      <nav className="fixed top-0 h-12 z-50 w-full bg-white border-b border-gray-200 dark:bg-blueeeee dark:border-gray-700">
+        <div className=" ">
+          <div className="flex items-center justify-between">
+            <div className="flex h-12 items-center bg-blu justify-start rtl:justify-end">
+              <a href="https://flowbite.com"  className=" flex  md:me-11">
+                <span className="self-center mx-8 font-bold mt-1 text-xl whitespace-nowrap dark:text-white">J.C.BOSEUST</span>
+              </a>
+            </div>
+            <div className="flex justify-center items-center">
+              <div className="px-2 text-white h-12 flex items-center justify-center cursor-pointer hover:bg-blu">< FiMail className="text-lg"/></div>
+              <div className="px-2 text-white h-12 flex items-center justify-center cursor-pointer hover:bg-blu"><IoIosNotificationsOutline className="text-xl"/></div>
+              <div className="px-2 text-white h-12 flex items-center justify-center cursor-pointer hover:bg-blu text-sm">22001015057</div>
+              <div className="px-2 text-white h-12 flex items-center justify-center cursor-pointer hover:bg-blu"><MdOutlineSettingsSuggest className="text-xl"/></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <aside id="logo-sidebar" className="fixed top-0 left-0 z-40 w-60 h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-greeeee dark:border-gray-700" aria-label="Sidebar">
+         <div className="h-full pb-4 overflow-y-auto bg-white dark:bg-greeeee">
+            <ul className="space-y-2 font-medium ">
+               <li>
+               <div className="flex mb-5 pl-4">
+                    <div className="w-12 h-12 rounded-full bg-white"> <img className="rounded-full" src="https://imgtr.ee/images/2024/08/15/1db3c24be09dc871e39bc940b7cf14cb.jpeg" alt="" /> </div>
+                    <div className="flex flex-col ml-3 mt-1">
+                      <div className="text-xs text-white font-bold">Welcome To J.C.Bose UST</div>
+                      <div className="flex"><div className="text-xs flex justify-center items-center text-white"><GoDotFill className="text-green-700 "/>Online</div></div>
+                    </div>
+                  </div>
+               </li>
+               <li >
+                  <a href="#" className="flex items-center text-sm p-2 pl-4 text-gray-400  hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-gray-800 group">
+                  <FaTachometerAlt className="text-gray-300 mr-2" />    Dashboard
+                  </a>
+               </li>
+               <li >
+                  <a href="#" className="flex items-center text-sm p-2 pl-4 text-gray-400 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-gray-800 group">
+                  <FaTachometerAlt className="text-gray-300 mr-2" />    Re-Evaluation
+                  </a>
+               </li>
+               <li > 
+                  <a href="#" className="flex items-center text-sm p-2 pl-4 text-gray-400 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-gray-800 group">
+                  <FaTachometerAlt className="text-gray-300 mr-2" />    Change Password
+                  </a>
+               </li>
+               <li >
+                  <Link href="/result" className="flex items-center text-sm p-2 pl-4 text-gray-400 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-gray-800 group">
+                  <FaTachometerAlt className="text-gray-300 mr-2" />    Result
+                  </Link>
+               </li>
+               <li >
+                  <a href="#" className="flex items-center text-sm p-2 pl-4 text-gray-400 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-gray-800 group">
+                  <FaTachometerAlt className="text-gray-300 mr-2" />    Student Personal Details
+                  </a>
+               </li>
+               <li >
+                  <a href="#" className="flex items-center text-sm p-2 pl-4 text-gray-400 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-gray-800 group">
+                  <FaTachometerAlt className="text-gray-300 mr-2" />    Semester Fee Details
+                  </a>
+               </li>
+               <li >
+                  <a href="#" className="flex items-center text-sm p-2 pl-4 text-gray-400 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-gray-800 group">
+                  <FaTachometerAlt className="text-gray-300 mr-2" />    Subject Allotment
+                  </a>
+               </li>
+               <li >
+                  <a href="#" className="flex items-center text-sm p-2 pl-4 text-gray-400 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-gray-800 group">
+                  <FaTachometerAlt className="text-gray-300 mr-2" />    RE-Appear
+                  </a>
+               </li>
+               <li >
+                  <a href="#" className="flex items-center text-sm p-2 pl-4 text-gray-400 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-gray-800 group">
+                  <FaTachometerAlt className="text-gray-300 mr-2" />    DLMS Login
+                  </a>
+               </li>
+               <li >
+                  <a href="#" className="flex items-center text-sm p-2 pl-4 text-gray-400 hover:bg-gray-100 dark:hover:text-gray-300 dark:hover:bg-gray-800 group">
+                  <FaTachometerAlt className="text-gray-300 mr-2" />    Document Details
+                  </a>
+               </li>
+               
+            </ul>
+         </div>
+      </aside>
+      
+      <div className="p-4 sm:ml-64">
+         
+      </div>
+      
+          </div>
+        {children}</body>
     </html>
   );
 }
