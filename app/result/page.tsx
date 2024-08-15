@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-const result = () => {
+const Result = () => {
   const [sem, setsem] = useState('')
 
   useEffect(() => {
@@ -74,4 +74,4 @@ const result = () => {
   )
 }
 
-export default result
+export default Result 
